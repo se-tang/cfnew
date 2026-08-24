@@ -2635,7 +2635,7 @@ async function 处理订阅请求(请求507, 用户506, 网址505 = null) {
   const 最终链接列表 = [];
   const 工作器域名504 = 网址505.hostname;
   const 目标503 = 网址505.searchParams.get('target') || 'base64';
-  const 别名命名器502 = 创建值节点命名器(false);
+  const 别名命名器502 = 创建值节点命名器(!!优选地址源);  // yxURL 已配置时跳过自动编号
 
   // 如果启用了ECH，使用自定义值
   let 加密客户端问候配置501 = null;
