@@ -1058,7 +1058,7 @@ export default {
                 --cp-red: #f43f5e;
                 --cp-text: #e6f5ff;
                 --cp-text-dim: #64748b;
-                --cp-border: rgba(0, 240, 255, 0.55);
+                --cp-border: #e2e8f0;
                 --cp-grid: rgba(255, 43, 214, 0.16);
             }
             * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -1120,10 +1120,10 @@ export default {
             }
             .matrix-column {
                 position: absolute; top: -120%; left: 0;
-                color: var(--cp-cyan);
+                color: #1e293b;
                 font-family: "JetBrains Mono", "Courier New", monospace;
                 font-size: 14px; line-height: 1.25;
-                text-shadow: 0 0 6px var(--cp-cyan), 0 0 12px rgba(37,99,235,0.2);
+                text-shadow: none, 0 0 12px rgba(37,99,235,0.2);
                 animation: cp-drop linear infinite;
             }
             @keyframes cp-drop {
@@ -1141,7 +1141,7 @@ export default {
                 width: 92%; max-width: 860px; height: 540px;
                 background:
                     linear-gradient(180deg, rgba(8,4,28,0.92) 0%, rgba(15,3,40,0.92) 100%);
-                border: 1px solid var(--cp-border);
+                border: 1px solid #e2e8f0;
                 border-radius: 0;
                 box-shadow:
                     0 0 0 1px rgba(244,63,94,0.25),
@@ -1194,11 +1194,11 @@ export default {
             .terminal-button:nth-child(2) { background: var(--cp-yellow); box-shadow: 0 0 8px var(--cp-yellow); }
             .terminal-button:nth-child(3) { background: var(--cp-mint); box-shadow: 0 0 8px var(--cp-mint); }
             .terminal-title {
-                color: var(--cp-cyan);
+                color: #1e293b;
                 font-size: 13px; font-weight: 700;
                 letter-spacing: 0.25em;
                 text-transform: uppercase;
-                text-shadow: 0 0 6px var(--cp-cyan);
+                text-shadow: none;
             }
             .terminal-title::before { content: "// "; color: var(--cp-pink); }
             .terminal-body {
@@ -1221,10 +1221,10 @@ export default {
                 text-shadow: 0 0 6px var(--cp-pink);
                 letter-spacing: 0.05em;
             }
-            .terminal-prompt::before { content: "▍"; color: var(--cp-cyan); margin-right: 4px; }
+            .terminal-prompt::before { content: "▍"; color: #1e293b; margin-right: 4px; }
             .terminal-input {
                 background: transparent; border: none; outline: none;
-                color: var(--cp-cyan);
+                color: #1e293b;
                 font-family: inherit;
                 font-size: 14px; flex: 1; min-width: 0;
                 caret-color: var(--cp-pink);
@@ -1242,13 +1242,13 @@ export default {
                 0%, 100% { opacity: 1; }
                 50% { opacity: 0; }
             }
-            .terminal-output { color: var(--cp-cyan); margin: 4px 0; }
+            .terminal-output { color: #1e293b; margin: 4px 0; }
             .terminal-error  { color: var(--cp-red); margin: 4px 0; text-shadow: 0 0 6px var(--cp-red); }
             .terminal-success{ color: var(--cp-mint); margin: 4px 0; text-shadow: 0 0 6px var(--cp-mint); }
 
             .cp-hud {
                 position: fixed; top: 18px; right: 22px;
-                color: var(--cp-cyan);
+                color: #1e293b;
                 font-family: "JetBrains Mono", monospace;
                 font-size: 11px; letter-spacing: 0.2em;
                 text-transform: uppercase;
@@ -1270,17 +1270,17 @@ export default {
             #languageSelector {
                 background: rgba(8,4,28,0.85);
                 border: 1px solid var(--cp-cyan);
-                color: var(--cp-cyan);
+                color: #1e293b;
                 padding: 6px 12px;
                 font-family: inherit;
                 font-size: 12px;
                 cursor: pointer;
                 letter-spacing: 0.12em;
-                text-shadow: 0 0 6px var(--cp-cyan);
+                text-shadow: none;
                 box-shadow: 0 0 12px rgba(0,122,138,0.35);
                 clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
             }
-            #languageSelector option { background: var(--cp-bg-2); color: var(--cp-cyan); }
+            #languageSelector option { background: var(--cp-bg-2); color: #1e293b; }
 
             /* FX toggle - 页面特效图形化开关 */
             .cp-fx-toggle {
@@ -1323,7 +1323,7 @@ export default {
                 font-weight: 700;
                 letter-spacing: 0.18em;
                 text-transform: uppercase;
-                color: var(--cp-cyan);
+                color: #1e293b;
                 text-shadow:
                     0 0 8px var(--cp-cyan),
                     -2px 0 var(--cp-pink),
@@ -4338,7 +4338,7 @@ async function 处理订阅值(请求241, 用户240 = null) {
                 --cp-red: #f43f5e;
                 --cp-text: #e6f5ff;
                 --cp-text-dim: #64748b;
-                --cp-border: rgba(0, 240, 255, 0.55);
+                --cp-border: #e2e8f0;
                 --cp-border-pink: rgba(255, 43, 214, 0.55);
                 --cp-grid: rgba(255, 43, 214, 0.16);
             }
@@ -4402,10 +4402,10 @@ async function 处理订阅值(请求241, 用户240 = null) {
             }
             .matrix-column {
                 position: absolute; top: -120%; left: 0;
-                color: var(--cp-cyan);
+                color: #1e293b;
                 font-family: "JetBrains Mono", "Courier New", monospace;
                 font-size: 14px; line-height: 1.25;
-                text-shadow: 0 0 6px var(--cp-cyan), 0 0 12px rgba(37,99,235,0.2);
+                text-shadow: none, 0 0 12px rgba(37,99,235,0.2);
                 animation: cp-drop linear infinite;
             }
             @keyframes cp-drop {
@@ -4433,7 +4433,7 @@ async function 处理订阅值(请求241, 用户240 = null) {
                 margin-bottom: 36px;
                 padding: 28px 24px;
                 position: relative;
-                border: 1px solid var(--cp-border);
+                border: 1px solid #e2e8f0;
                 background: linear-gradient(135deg, rgba(15,3,40,0.6), rgba(40,5,70,0.45));
                 clip-path: polygon(
                     0 14px, 14px 0,
@@ -4442,7 +4442,7 @@ async function 处理订阅值(请求241, 用户240 = null) {
                     calc(100% - 14px) 100%, 80px 100%,
                     60px calc(100% - 14px), 0 calc(100% - 14px)
                 );
-                box-shadow: 0 0 30px rgba(0,122,138,0.25), 0 0 60px rgba(244,63,94,0.18);
+                box-shadow: 0 0 30px rgba(37,99,235,0.15), 0 0 60px rgba(244,63,94,0.18);
             }
             .header::before {
                 content: "// SYS_ID / CFNEW / NIGHTCITY.NET";
@@ -4462,7 +4462,7 @@ async function 处理订阅值(请求241, 用户240 = null) {
                 font-size: clamp(2.2rem, 5vw, 3.4rem);
                 font-weight: 800;
                 margin: 14px 0 8px;
-                color: var(--cp-cyan);
+                color: #1e293b;
                 letter-spacing: 0.08em;
                 text-transform: uppercase;
                 text-shadow:
@@ -4489,7 +4489,7 @@ async function 处理订阅值(请求241, 用户240 = null) {
             .card {
                 background:
                     linear-gradient(180deg, rgba(8,4,28,0.85) 0%, rgba(15,3,40,0.78) 100%);
-                border: 1px solid var(--cp-border);
+                border: 1px solid #e2e8f0;
                 border-radius: 0;
                 padding: 26px 28px 28px;
                 margin-bottom: 22px;
@@ -4518,7 +4518,7 @@ async function 处理订阅值(请求241, 用户240 = null) {
             .card-title {
                 font-size: 1.1rem;
                 margin: 0 0 20px;
-                color: var(--cp-cyan);
+                color: #1e293b;
                 letter-spacing: 0.25em;
                 text-transform: uppercase;
                 text-shadow: 0 0 8px var(--cp-cyan);
@@ -4538,10 +4538,10 @@ async function 处理订阅值(请求241, 用户240 = null) {
                 margin-left: 6px;
             }
             h3, h4 {
-                color: var(--cp-cyan);
+                color: #1e293b;
                 letter-spacing: 0.18em;
                 text-transform: uppercase;
-                text-shadow: 0 0 6px var(--cp-cyan);
+                text-shadow: none;
                 font-weight: 700;
             }
 
@@ -4553,9 +4553,9 @@ async function 处理订阅值(请求241, 用户240 = null) {
             }
             .client-btn {
                 background: linear-gradient(135deg, rgba(0,122,138,0.08), rgba(244,63,94,0.08));
-                border: 1px solid var(--cp-border);
+                border: 1px solid #e2e8f0;
                 padding: 14px 18px;
-                color: var(--cp-cyan);
+                color: #1e293b;
                 font-family: inherit;
                 font-weight: 700;
                 font-size: 0.85rem;
@@ -4566,7 +4566,7 @@ async function 处理订阅值(请求241, 用户240 = null) {
                 text-align: center;
                 position: relative;
                 overflow: hidden;
-                text-shadow: 0 0 6px var(--cp-cyan);
+                text-shadow: none;
                 clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px);
             }
             .client-btn::before {
@@ -4578,7 +4578,7 @@ async function 处理订阅值(请求241, 用户240 = null) {
             .client-btn:hover {
                 color: var(--cp-pink);
                 border-color: var(--cp-pink);
-                background: linear-gradient(135deg, rgba(244,63,94,0.18), rgba(0,122,138,0.10));
+                background: linear-gradient(135deg, rgba(244,63,94,0.18), rgba(37,99,235,0.06));
                 box-shadow: 0 0 14px rgba(244,63,94,0.55), 0 0 28px rgba(0,122,138,0.30);
                 transform: translateY(-2px);
                 text-shadow: 0 0 8px var(--cp-pink);
@@ -4588,7 +4588,7 @@ async function 处理订阅值(请求241, 用户240 = null) {
             .subscription-url,
             [class*='subscription-url'],
             [class*='c3Vic2NyaXB0aW9u'] {
-                background: rgba(0,0,0,0.7) !important;
+                background: #ffffff !important;
                 border: 1px dashed var(--cp-pink) !important;
                 padding: 14px 16px !important;
                 word-break: break-all;
@@ -4608,7 +4608,7 @@ async function 处理订阅值(请求241, 用户240 = null) {
 
             .cp-hud {
                 position: fixed; top: 18px; right: 22px;
-                color: var(--cp-cyan);
+                color: #1e293b;
                 font-family: "JetBrains Mono", monospace;
                 font-size: 11px; letter-spacing: 0.2em;
                 text-transform: uppercase;
@@ -4630,17 +4630,17 @@ async function 处理订阅值(请求241, 用户240 = null) {
             #languageSelector {
                 background: rgba(8,4,28,0.85);
                 border: 1px solid var(--cp-cyan);
-                color: var(--cp-cyan);
+                color: #1e293b;
                 padding: 6px 12px;
                 font-family: inherit;
                 font-size: 12px;
                 cursor: pointer;
                 letter-spacing: 0.12em;
-                text-shadow: 0 0 6px var(--cp-cyan);
+                text-shadow: none;
                 box-shadow: 0 0 12px rgba(0,122,138,0.35);
                 clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
             }
-            #languageSelector option { background: var(--cp-bg-2); color: var(--cp-cyan); }
+            #languageSelector option { background: var(--cp-bg-2); color: #1e293b; }
 
             /* FX toggle - 页面特效图形化开关 */
             .cp-fx-toggle {
@@ -4708,7 +4708,7 @@ async function 处理订阅值(请求241, 用户240 = null) {
             /* Status panel inside card */
             #systemStatus {
                 background: linear-gradient(135deg, rgba(0,122,138,0.05), rgba(244,63,94,0.05)) !important;
-                border: 1px solid var(--cp-border) !important;
+                border: 1px solid #e2e8f0 !important;
                 padding: 18px 20px !important;
                 margin: 14px 0 0 !important;
                 box-shadow: inset 0 0 16px rgba(0,122,138,0.12) !important;
@@ -4735,9 +4735,9 @@ async function 处理订阅值(请求241, 用户240 = null) {
             /* Force inputs / selects to cyberpunk */
             input[type="text"], input[type="number"], input[type="password"],
             select, textarea {
-                background: rgba(0,0,0,0.6) !important;
-                border: 1px solid var(--cp-border) !important;
-                color: var(--cp-cyan) !important;
+                background: #f1f5f9 !important;
+                border: 1px solid #cbd5e1 !important;
+                color: #0f172a !important;
                 font-family: inherit !important;
                 font-size: 13px !important;
                 padding: 10px 12px !important;
@@ -4751,13 +4751,13 @@ async function 处理订阅值(请求241, 用户240 = null) {
                 border-color: var(--cp-pink) !important;
                 box-shadow: 0 0 0 1px var(--cp-pink), 0 0 14px rgba(244,63,94,0.4) !important;
             }
-            select option { background: var(--cp-bg-2); color: var(--cp-cyan); }
+            select option { background: var(--cp-bg-2); color: #1e293b; }
             input[type="checkbox"], input[type="radio"] {
                 accent-color: var(--cp-pink);
             }
 
             label {
-                color: var(--cp-cyan) !important;
+                color: #0f172a !important;
                 letter-spacing: 0.05em;
                 text-shadow: 0 0 4px rgba(0,122,138,0.4);
             }
@@ -4779,8 +4779,8 @@ async function 处理订阅值(请求241, 用户240 = null) {
             /* Buttons inside forms - global override */
             button, input[type="submit"] {
                 background: linear-gradient(135deg, rgba(0,122,138,0.15), rgba(244,63,94,0.15)) !important;
-                border: 1px solid var(--cp-border) !important;
-                color: var(--cp-cyan) !important;
+                border: 1px solid #e2e8f0 !important;
+                color: #0f172a !important;
                 font-family: inherit !important;
                 font-weight: 700 !important;
                 cursor: pointer;
@@ -4788,10 +4788,10 @@ async function 处理订阅值(请求241, 用户240 = null) {
                 letter-spacing: 0.18em !important;
                 text-transform: uppercase;
                 font-size: 0.78rem !important;
-                text-shadow: 0 0 6px var(--cp-cyan) !important;
+                text-shadow: none !important;
                 transition: all 0.25s ease;
                 clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
-                box-shadow: 0 0 10px rgba(0,122,138,0.25);
+                box-shadow: 0 0 10px rgba(37,99,235,0.15);
             }
             button:hover, input[type="submit"]:hover {
                 color: var(--cp-pink) !important;
@@ -4804,10 +4804,10 @@ async function 处理订阅值(请求241, 用户240 = null) {
                 color: var(--cp-red) !important;
                 border-color: var(--cp-red) !important;
                 text-shadow: 0 0 6px var(--cp-red) !important;
-                background: linear-gradient(135deg, rgba(255,56,96,0.15), rgba(244,63,94,0.10)) !important;
+                background: linear-gradient(135deg, rgba(244,63,94,0.15), rgba(244,63,94,0.10)) !important;
             }
             button[id*="Reset"]:hover, button[onclick*="reset"]:hover, button[style*="ff0000"]:hover {
-                box-shadow: 0 0 16px rgba(255,56,96,0.5) !important;
+                box-shadow: 0 0 16px rgba(244,63,94,0.5) !important;
             }
             button[id="stopLatencyTest"] {
                 color: var(--cp-red) !important;
@@ -4827,11 +4827,11 @@ async function 处理订阅值(请求241, 用户240 = null) {
 
             /* kvStatus / statusMessage / currentConfig / pathTypeInfo */
             #kvStatus, #statusMessage, #currentConfig, #pathTypeInfo {
-                background: rgba(0,0,0,0.55) !important;
-                border: 1px solid var(--cp-border) !important;
-                color: var(--cp-cyan) !important;
+                background: #ffffff !important;
+                border: 1px solid #e2e8f0 !important;
+                color: #0f172a !important;
                 font-family: inherit !important;
-                box-shadow: inset 0 0 10px rgba(0,122,138,0.10) !important;
+                box-shadow: inset 0 0 10px rgba(37,99,235,0.06) !important;
                 padding: 12px 14px !important;
                 font-size: 0.85rem !important;
                 letter-spacing: 0.04em;
@@ -4844,22 +4844,22 @@ async function 处理订阅值(请求241, 用户240 = null) {
 
             /* Latency Result list */
             #latencyResultsList {
-                background: rgba(0,0,0,0.5) !important;
-                border: 1px solid var(--cp-border) !important;
+                background: #ffffff !important;
+                border: 1px solid #e2e8f0 !important;
             }
             #latencyResultsList > div {
                 border-bottom: 1px dashed rgba(37,99,235,0.05) !important;
             }
             #cityFilterContainer {
-                background: rgba(0,0,0,0.55) !important;
+                background: #ffffff !important;
                 border: 1px solid var(--cp-border-pink) !important;
             }
 
             /* Related links area */
             .card a {
-                color: var(--cp-cyan) !important;
+                color: #0f172a !important;
                 text-decoration: none;
-                text-shadow: 0 0 6px var(--cp-cyan);
+                text-shadow: none;
                 letter-spacing: 0.15em;
                 text-transform: uppercase;
                 font-size: 0.85rem;
@@ -4875,7 +4875,7 @@ async function 处理订阅值(请求241, 用户240 = null) {
 
             /* Scrollbars */
             ::-webkit-scrollbar { width: 8px; height: 8px; }
-            ::-webkit-scrollbar-track { background: rgba(0,0,0,0.4); }
+            ::-webkit-scrollbar-track { background: #ffffff; }
             ::-webkit-scrollbar-thumb {
                 background: linear-gradient(180deg, var(--cp-pink), var(--cp-cyan));
             }
@@ -4914,7 +4914,7 @@ async function 处理订阅值(请求241, 用户240 = null) {
                 text-transform: uppercase;
                 color: var(--cp-pink) !important;
                 background:
-                    linear-gradient(135deg, rgba(244,63,94,0.45) 0%, rgba(0,122,138,0.25) 100%) !important;
+                    linear-gradient(135deg, rgba(244,63,94,0.45) 0%, rgba(37,99,235,0.15) 100%) !important;
                 border: 2px solid var(--cp-pink) !important;
                 text-shadow: 0 0 10px var(--cp-pink) !important;
                 box-shadow:
@@ -4954,7 +4954,7 @@ async function 处理订阅值(请求241, 用户240 = null) {
             .cp-fab-save .cp-fab-icon {
                 font-size: 1.15em;
                 line-height: 1;
-                color: var(--cp-cyan);
+                color: #1e293b;
                 text-shadow: 0 0 10px var(--cp-cyan);
             }
             .cp-fab-save .cp-fab-dot {
@@ -4996,8 +4996,8 @@ async function 处理订阅值(请求241, 用户240 = null) {
             /* Secondary mini buttons - icon-first */
             .cp-action-btn {
                 background: rgba(8,4,28,0.85) !important;
-                border: 1px solid var(--cp-border) !important;
-                color: var(--cp-cyan) !important;
+                border: 1px solid #e2e8f0 !important;
+                color: #0f172a !important;
                 font-family: inherit !important;
                 font-weight: 700 !important;
                 cursor: pointer;
@@ -5005,7 +5005,7 @@ async function 处理订阅值(请求241, 用户240 = null) {
                 padding: 0 !important;
                 letter-spacing: 0 !important;
                 font-size: 1.05rem !important;
-                text-shadow: 0 0 6px var(--cp-cyan) !important;
+                text-shadow: none !important;
                 transition: all 0.25s ease;
                 clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
                 box-shadow: 0 0 10px rgba(0,122,138,0.35);
@@ -5020,12 +5020,12 @@ async function 处理订阅值(请求241, 用户240 = null) {
                 bottom: 100%; right: 50%;
                 transform: translate(50%, -8px);
                 background: rgba(8,4,28,0.95);
-                color: var(--cp-cyan);
+                color: #1e293b;
                 font-size: 10px;
                 letter-spacing: 0.18em;
                 text-transform: uppercase;
                 padding: 5px 9px;
-                border: 1px solid var(--cp-border);
+                border: 1px solid #e2e8f0;
                 opacity: 0; pointer-events: none;
                 transition: opacity 0.2s;
                 white-space: nowrap;
@@ -5044,11 +5044,11 @@ async function 处理订阅值(请求241, 用户240 = null) {
                 color: var(--cp-red) !important;
                 border-color: var(--cp-red) !important;
                 text-shadow: 0 0 6px var(--cp-red) !important;
-                box-shadow: 0 0 10px rgba(255,56,96,0.45) !important;
+                box-shadow: 0 0 10px rgba(244,63,94,0.45) !important;
             }
             .cp-action-btn-danger:hover {
                 color: #fff !important;
-                box-shadow: 0 0 20px rgba(255,56,96,0.85) !important;
+                box-shadow: 0 0 20px rgba(244,63,94,0.85) !important;
                 transform: translateY(-2px);
             }
             .cp-action-btn-saving,
@@ -5090,7 +5090,7 @@ async function 处理订阅值(请求241, 用户240 = null) {
                 border-color: var(--cp-red);
                 color: var(--cp-red);
                 text-shadow: 0 0 6px var(--cp-red);
-                box-shadow: 0 0 14px rgba(255,56,96,0.55);
+                box-shadow: 0 0 14px rgba(244,63,94,0.55);
             }
             /* Toast notification stack (top-right) */
             .cp-toast-stack {
@@ -5120,7 +5120,7 @@ async function 处理订阅值(请求241, 用户240 = null) {
                 box-shadow:
                     0 0 0 1px rgba(0,255,157,0.25),
                     0 0 18px rgba(0,255,157,0.45),
-                    0 8px 28px rgba(0,0,0,0.55);
+                    0 8px 28px rgba(30,41,59,0.12);
                 backdrop-filter: blur(8px);
                 clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px);
                 transform: translateX(120%);
@@ -5191,15 +5191,15 @@ async function 处理订阅值(请求241, 用户240 = null) {
             .cp-toast.cp-toast-success::before,
             .cp-toast.cp-toast-success::after { background: var(--cp-mint); box-shadow: 0 0 10px var(--cp-mint); }
             .cp-toast.cp-toast-success .cp-toast-icon { color: var(--cp-mint); text-shadow: 0 0 8px var(--cp-mint); }
-            .cp-toast.cp-toast-info { border-color: var(--cp-cyan); color: var(--cp-cyan); text-shadow: 0 0 6px var(--cp-cyan); box-shadow: 0 0 0 1px rgba(0,122,138,0.25), 0 0 18px rgba(0,122,138,0.45), 0 8px 28px rgba(0,0,0,0.55); }
+            .cp-toast.cp-toast-info { border-color: #1e293b; color: #1e293b; text-shadow: none; box-shadow: 0 0 0 1px rgba(37,99,235,0.15), 0 0 18px rgba(37,99,235,0.25), 0 8px 28px rgba(30,41,59,0.12); }
             .cp-toast.cp-toast-info::before,
             .cp-toast.cp-toast-info::after { background: var(--cp-cyan); box-shadow: 0 0 10px var(--cp-cyan); }
-            .cp-toast.cp-toast-info .cp-toast-icon { color: var(--cp-cyan); text-shadow: 0 0 8px var(--cp-cyan); }
-            .cp-toast.cp-toast-warn { border-color: var(--cp-amber); color: var(--cp-amber); text-shadow: 0 0 6px var(--cp-amber); box-shadow: 0 0 0 1px rgba(255,176,46,0.25), 0 0 18px rgba(255,176,46,0.45), 0 8px 28px rgba(0,0,0,0.55); }
+            .cp-toast.cp-toast-info .cp-toast-icon { color: #1e293b; text-shadow: 0 0 8px var(--cp-cyan); }
+            .cp-toast.cp-toast-warn { border-color: var(--cp-amber); color: var(--cp-amber); text-shadow: 0 0 6px var(--cp-amber); box-shadow: 0 0 0 1px rgba(180,83,9,0.25), 0 0 18px rgba(180,83,9,0.45), 0 8px 28px rgba(30,41,59,0.12); }
             .cp-toast.cp-toast-warn::before,
             .cp-toast.cp-toast-warn::after { background: var(--cp-amber); box-shadow: 0 0 10px var(--cp-amber); }
             .cp-toast.cp-toast-warn .cp-toast-icon { color: var(--cp-amber); text-shadow: 0 0 8px var(--cp-amber); }
-            .cp-toast.cp-toast-error { border-color: var(--cp-red); color: var(--cp-red); text-shadow: 0 0 6px var(--cp-red); box-shadow: 0 0 0 1px rgba(255,56,96,0.30), 0 0 18px rgba(255,56,96,0.55), 0 8px 28px rgba(0,0,0,0.55); }
+            .cp-toast.cp-toast-error { border-color: var(--cp-red); color: var(--cp-red); text-shadow: 0 0 6px var(--cp-red); box-shadow: 0 0 0 1px rgba(244,63,94,0.30), 0 0 18px rgba(244,63,94,0.55), 0 8px 28px rgba(30,41,59,0.12); }
             .cp-toast.cp-toast-error::before,
             .cp-toast.cp-toast-error::after { background: var(--cp-red); box-shadow: 0 0 10px var(--cp-red); }
             .cp-toast.cp-toast-error .cp-toast-icon { color: var(--cp-red); text-shadow: 0 0 8px var(--cp-red); }
@@ -5306,7 +5306,7 @@ async function 处理订阅值(请求241, 用户240 = null) {
                     <form id="regionForm" style="margin-bottom: 20px;">
                         <div style="margin-bottom: 15px;">
                                 <label style="display: block; margin-bottom: 8px; color: #2563eb; font-weight: bold; text-shadow: 0 0 3px #2563eb;">${翻译值.specifyRegion}</label>
-                            <select id="wkRegion" style="width: 100%; padding: 12px; background: rgba(0, 0, 0, 0.8); border: 2px solid #2563eb; color: #2563eb; font-family: 'Courier New', monospace; font-size: 14px;">
+                            <select id="wkRegion" style="width: 100%; padding: 12px; background: #f1f5f9; border: 2px solid #cbd5e1; color: #0f172a; font-family: 'Courier New', monospace; font-size: 14px;">
                                     <option value="">${翻译值.autoDetect}</option>
                                     <option value="HK">${翻译值.regionNames.HK}</option>
                                     <option value="US">${翻译值.regionNames.US}</option>
@@ -5354,17 +5354,17 @@ async function 处理订阅值(请求241, 用户240 = null) {
                                     </div>
                                     <div style="margin-top: 15px; margin-bottom: 10px;">
                                         <label style="display: block; margin-bottom: 8px; color: #2563eb; font-size: 0.95rem;">${翻译值.customDNS}</label>
-                                        <input type="text" id="customDNS" placeholder="${翻译值.customDNSPlaceholder}" style="width: 100%; padding: 10px; background: rgba(0, 0, 0, 0.8); border: 1px solid #2563eb; color: #2563eb; font-family: 'Courier New', monospace; font-size: 13px;">
+                                        <input type="text" id="customDNS" placeholder="${翻译值.customDNSPlaceholder}" style="width: 100%; padding: 10px; background: #f1f5f9; border: 1px solid #2563eb; color: #2563eb; font-family: 'Courier New', monospace; font-size: 13px;">
                                         <small style="color: #64748b; font-size: 0.8rem; display: block; margin-top: 5px;">${翻译值.customDNSHint}</small>
                                     </div>
                                     <div style="margin-bottom: 10px;">
                                         <label style="display: block; margin-bottom: 8px; color: #2563eb; font-size: 0.95rem;">${翻译值.customECHDomain}</label>
-                                        <input type="text" id="customECHDomain" placeholder="${翻译值.customECHDomainPlaceholder}" style="width: 100%; padding: 10px; background: rgba(0, 0, 0, 0.8); border: 1px solid #2563eb; color: #2563eb; font-family: 'Courier New', monospace; font-size: 13px;">
+                                        <input type="text" id="customECHDomain" placeholder="${翻译值.customECHDomainPlaceholder}" style="width: 100%; padding: 10px; background: #f1f5f9; border: 1px solid #2563eb; color: #2563eb; font-family: 'Courier New', monospace; font-size: 13px;">
                                         <small style="color: #64748b; font-size: 0.8rem; display: block; margin-top: 5px;">${翻译值.customECHDomainHint}</small>
                                     </div>
                                     <div style="margin-bottom: 10px;">
                                         <label style="display: block; margin-bottom: 8px; color: #2563eb; font-size: 0.95rem;">${翻译值.alpn}</label>
-                                        <select id="alpn" style="width: 100%; padding: 10px; background: rgba(0, 0, 0, 0.8); border: 1px solid #2563eb; color: #2563eb; font-family: 'Courier New', monospace; font-size: 13px;">
+                                        <select id="alpn" style="width: 100%; padding: 10px; background: #f1f5f9; border: 1px solid #2563eb; color: #2563eb; font-family: 'Courier New', monospace; font-size: 13px;">
                                             <option value="">${翻译值.alpnDefault}</option>
                                             <option value="h3">h3</option>
                                             <option value="h2">h2</option>
@@ -5378,7 +5378,7 @@ async function 处理订阅值(请求241, 用户240 = null) {
                                 </div>
                                 <div style="margin-top: 15px; padding-top: 15px; border-top: 1px solid rgba(0, 240, 255, 0.3);">
                                         <label style="display: block; margin-bottom: 8px; color: #2563eb; font-size: 0.95rem;">${翻译值.altPassword}</label>
-                                        <input type="text" id="tp" placeholder="${翻译值.altPasswordPlaceholder}" style="width: 100%; padding: 10px; background: rgba(0, 0, 0, 0.8); border: 1px solid #2563eb; color: #2563eb; font-family: 'Courier New', monospace; font-size: 13px;">
+                                        <input type="text" id="tp" placeholder="${翻译值.altPasswordPlaceholder}" style="width: 100%; padding: 10px; background: #f1f5f9; border: 1px solid #2563eb; color: #2563eb; font-family: 'Courier New', monospace; font-size: 13px;">
                                         <small style="color: #64748b; font-size: 0.8rem; display: block; margin-top: 5px;">${翻译值.altPasswordHint}</small>
                                 </div>
                                     <small style="color: #64748b; font-size: 0.85rem; display: block; margin-top: 10px;">${翻译值.protocolHint}</small>
@@ -5386,27 +5386,27 @@ async function 处理订阅值(请求241, 用户240 = null) {
                         </div>
                         <div style="margin-bottom: 15px;">
                                 <label style="display: block; margin-bottom: 8px; color: #2563eb; font-weight: bold; text-shadow: 0 0 3px #2563eb;">${翻译值.customHomepage}</label>
-                                <input type="text" id="customHomepage" placeholder="${翻译值.customHomepagePlaceholder}" style="width: 100%; padding: 12px; background: rgba(0, 0, 0, 0.8); border: 2px solid #2563eb; color: #2563eb; font-family: 'Courier New', monospace; font-size: 14px;">
+                                <input type="text" id="customHomepage" placeholder="${翻译值.customHomepagePlaceholder}" style="width: 100%; padding: 12px; background: #f1f5f9; border: 2px solid #cbd5e1; color: #0f172a; font-family: 'Courier New', monospace; font-size: 14px;">
                                 <small style="color: #64748b; font-size: 0.85rem;">${翻译值.customHomepageHint}</small>
                         </div>
                         <div style="margin-bottom: 15px;">
                                 <label style="display: block; margin-bottom: 8px; color: #2563eb; font-weight: bold; text-shadow: 0 0 3px #2563eb;">${翻译值.customPath}</label>
-                                <input type="text" id="customPath" placeholder="${是否值236 ? 'مثال: /mypath یا خالی بگذارید تا از UUID استفاده شود' : '例如: /mypath 或留空使用 UUID'}" style="width: 100%; padding: 12px; background: rgba(0, 0, 0, 0.8); border: 2px solid #2563eb; color: #2563eb; font-family: 'Courier New', monospace; font-size: 14px;">
+                                <input type="text" id="customPath" placeholder="${是否值236 ? 'مثال: /mypath یا خالی بگذارید تا از UUID استفاده شود' : '例如: /mypath 或留空使用 UUID'}" style="width: 100%; padding: 12px; background: #f1f5f9; border: 2px solid #cbd5e1; color: #0f172a; font-family: 'Courier New', monospace; font-size: 14px;">
                                 <small style="color: #64748b; font-size: 0.85rem;">${是否值236 ? 解码64('2YXYs9uM2LEg2KfYtNiq2LHYp9qpINiz2YHYp9ix2LTbjC4g2Kfar9ixINiu2KfZhNuMINio2q/YsNin2LHbjNivINin2LIgVVVJRCDYqNmHINi52YbZiNin2YYg2YXYs9uM2LEg2KfYs9iq2YHYp9iv2Ycg2YXbjOKAjNi02YjYry4=') : 解码64('6Ieq5a6a5LmJ6K6i6ZiF6Lev5b6E44CC55WZ56m65YiZ5L2/55SoIFVVSUQg5L2c5Li66Lev5b6E44CC')}</small>
                         </div>
                         <div style="margin-bottom: 15px;">
                                 <label style="display: block; margin-bottom: 8px; color: #2563eb; font-weight: bold; text-shadow: 0 0 3px #2563eb;">${翻译值.customIP}</label>
-                                <input type="text" id="customIP" placeholder="${是否值236 ? 'مثال: 1.2.3.4:443' : '例如: 1.2.3.4:443'}" style="width: 100%; padding: 12px; background: rgba(0, 0, 0, 0.8); border: 2px solid #2563eb; color: #2563eb; font-family: 'Courier New', monospace; font-size: 14px;">
+                                <input type="text" id="customIP" placeholder="${是否值236 ? 'مثال: 1.2.3.4:443' : '例如: 1.2.3.4:443'}" style="width: 100%; padding: 12px; background: #f1f5f9; border: 2px solid #cbd5e1; color: #0f172a; font-family: 'Courier New', monospace; font-size: 14px;">
                                 <small style="color: #64748b; font-size: 0.85rem;">${是否值236 ? 解码64('2KLYr9ix2LMg2Ygg2b7ZiNix2KogUHJveHlJUCDYs9mB2KfYsdi024w=') : 解码64('6Ieq5a6a5LmJUHJveHlJUOWcsOWdgOWSjOerr+WPow==')}</small>
                         </div>
                         <div style="margin-bottom: 15px;">
                                 <label style="display: block; margin-bottom: 8px; color: #2563eb; font-weight: bold; text-shadow: 0 0 3px #2563eb;">${翻译值.preferredIPs}</label>
-                                <input type="text" id="yx" placeholder="${是否值236 ? 'مثال: 1.2.3.4:443#گره هنگ‌کنگ,5.6.7.8:80#گره آمریکا,example.com:8443#گره سنگاپور' : '例如: 1.2.3.4:443#日本节点,5.6.7.8:80#美国节点,example.com:8443#新加坡节点'}" style="width: 100%; padding: 12px; background: rgba(0, 0, 0, 0.8); border: 2px solid #2563eb; color: #2563eb; font-family: 'Courier New', monospace; font-size: 14px;">
+                                <input type="text" id="yx" placeholder="${是否值236 ? 'مثال: 1.2.3.4:443#گره هنگ‌کنگ,5.6.7.8:80#گره آمریکا,example.com:8443#گره سنگاپور' : '例如: 1.2.3.4:443#日本节点,5.6.7.8:80#美国节点,example.com:8443#新加坡节点'}" style="width: 100%; padding: 12px; background: #f1f5f9; border: 2px solid #cbd5e1; color: #0f172a; font-family: 'Courier New', monospace; font-size: 14px;">
                                 <small style="color: #64748b; font-size: 0.85rem;">${是否值236 ? 'فرمت: IP:پورت#نام گره یا IP:پورت (بدون # از نام پیش‌فرض استفاده می‌شود). پشتیبانی از چندین مورد، با کاما جدا می‌شوند. <span style="color: #b45309;">IP های اضافه شده از طریق API به طور خودکار در اینجا نمایش داده می‌شوند.</span>' : '格式: IP:端口#节点名称 或 IP:端口 (无#则使用默认名称)。支持多个，用逗号分隔。<span style="color: #b45309;">API添加的IP会自动显示在这里。</span>'}</small>
                         </div>
                         <div style="margin-bottom: 15px;">
                                 <label style="display: block; margin-bottom: 8px; color: #2563eb; font-weight: bold; text-shadow: 0 0 3px #2563eb;">${翻译值.preferredIPsURL}</label>
-                                <input type="text" id="yxURL" placeholder="${是否值236 ? 'URL منبع لیست IP ترجیحی را وارد کنید' : '输入优选IP列表来源URL'}" style="width: 100%; padding: 12px; background: rgba(0, 0, 0, 0.8); border: 2px solid #2563eb; color: #2563eb; font-family: 'Courier New', monospace; font-size: 14px;">
+                                <input type="text" id="yxURL" placeholder="${是否值236 ? 'URL منبع لیست IP ترجیحی را وارد کنید' : '输入优选IP列表来源URL'}" style="width: 100%; padding: 12px; background: #f1f5f9; border: 2px solid #cbd5e1; color: #0f172a; font-family: 'Courier New', monospace; font-size: 14px;">
                                 <small style="color: #64748b; font-size: 0.85rem;">${是否值236 ? 'URL منبع لیست IP ترجیحی سفارشی، اگر خالی بگذارید از آدرس پیش‌فرض استفاده می‌شود' : '自定义优选IP列表来源URL，留空则使用默认地址'}</small>
                         </div>
                         
@@ -5415,7 +5415,7 @@ async function 处理订阅值(请求241, 用户240 = null) {
                             <div style="display: flex; gap: 10px; margin-bottom: 12px; flex-wrap: wrap; align-items: center;">
                                 <div style="min-width: 120px;">
                                     <label style="display: block; margin-bottom: 5px; color: #2563eb; font-size: 0.9rem;">${翻译值.ipSource}</label>
-                                    <select id="ipSourceSelect" style="width: 100%; padding: 10px; background: rgba(0, 0, 0, 0.8); border: 1px solid #2563eb; color: #2563eb; font-family: 'Courier New', monospace; font-size: 13px; cursor: pointer;">
+                                    <select id="ipSourceSelect" style="width: 100%; padding: 10px; background: #f1f5f9; border: 1px solid #2563eb; color: #2563eb; font-family: 'Courier New', monospace; font-size: 13px; cursor: pointer;">
                                         <option value="manual">${翻译值.manualInput}</option>
                                         <option value="cfRandom">${翻译值.cfRandomIP}</option>
                                         <option value="urlFetch">${翻译值.urlFetch}</option>
@@ -5423,25 +5423,25 @@ async function 处理订阅值(请求241, 用户240 = null) {
                                 </div>
                                 <div style="width: 100px;">
                                     <label style="display: block; margin-bottom: 5px; color: #2563eb; font-size: 0.9rem;">${翻译值.latencyTestPort}</label>
-                                    <input type="number" id="latencyTestPort" value="443" min="1" max="65535" style="width: 100%; padding: 10px; background: rgba(0, 0, 0, 0.8); border: 1px solid #2563eb; color: #2563eb; font-family: 'Courier New', monospace; font-size: 13px;">
+                                    <input type="number" id="latencyTestPort" value="443" min="1" max="65535" style="width: 100%; padding: 10px; background: #f1f5f9; border: 1px solid #2563eb; color: #2563eb; font-family: 'Courier New', monospace; font-size: 13px;">
                                 </div>
                                 <div id="randomCountDiv" style="width: 100px; display: none;">
                                     <label style="display: block; margin-bottom: 5px; color: #2563eb; font-size: 0.9rem;">${翻译值.randomCount}</label>
-                                    <input type="number" id="randomIPCount" value="20" min="1" max="100" style="width: 100%; padding: 10px; background: rgba(0, 0, 0, 0.8); border: 1px solid #2563eb; color: #2563eb; font-family: 'Courier New', monospace; font-size: 13px;">
+                                    <input type="number" id="randomIPCount" value="20" min="1" max="100" style="width: 100%; padding: 10px; background: #f1f5f9; border: 1px solid #2563eb; color: #2563eb; font-family: 'Courier New', monospace; font-size: 13px;">
                                 </div>
                                 <div style="width: 80px;">
                                     <label style="display: block; margin-bottom: 5px; color: #2563eb; font-size: 0.9rem;">${是否值236 ? 'رشته‌ها' : '线程'}</label>
-                                    <input type="number" id="testThreads" value="5" min="1" max="50" style="width: 100%; padding: 10px; background: rgba(0, 0, 0, 0.8); border: 1px solid #2563eb; color: #2563eb; font-family: 'Courier New', monospace; font-size: 13px;">
+                                    <input type="number" id="testThreads" value="5" min="1" max="50" style="width: 100%; padding: 10px; background: #f1f5f9; border: 1px solid #2563eb; color: #2563eb; font-family: 'Courier New', monospace; font-size: 13px;">
                                 </div>
                             </div>
                             <div id="manualInputDiv" style="margin-bottom: 10px;">
                                 <label style="display: block; margin-bottom: 5px; color: #2563eb; font-size: 0.9rem;">${翻译值.latencyTestIP}</label>
-                                <input type="text" id="latencyTestInput" placeholder="${翻译值.latencyTestIPPlaceholder}" style="width: 100%; padding: 10px; background: rgba(0, 0, 0, 0.8); border: 1px solid #2563eb; color: #2563eb; font-family: 'Courier New', monospace; font-size: 13px;">
+                                <input type="text" id="latencyTestInput" placeholder="${翻译值.latencyTestIPPlaceholder}" style="width: 100%; padding: 10px; background: #f1f5f9; border: 1px solid #2563eb; color: #2563eb; font-family: 'Courier New', monospace; font-size: 13px;">
                             </div>
                             <div id="urlFetchDiv" style="margin-bottom: 10px; display: none;">
                                 <label style="display: block; margin-bottom: 5px; color: #2563eb; font-size: 0.9rem;">${翻译值.fetchURL}</label>
                                 <div style="display: flex; gap: 8px;">
-                                    <input type="text" id="fetchURLInput" placeholder="${翻译值.fetchURLPlaceholder}" style="flex: 1; padding: 10px; background: rgba(0, 0, 0, 0.8); border: 1px solid #2563eb; color: #2563eb; font-family: 'Courier New', monospace; font-size: 13px;">
+                                    <input type="text" id="fetchURLInput" placeholder="${翻译值.fetchURLPlaceholder}" style="flex: 1; padding: 10px; background: #f1f5f9; border: 1px solid #2563eb; color: #2563eb; font-family: 'Courier New', monospace; font-size: 13px;">
                                     <button type="button" id="fetchIPBtn" style="background: rgba(0, 200, 255, 0.2); border: 1px solid #2563eb; padding: 8px 16px; color: #2563eb; font-family: 'Courier New', monospace; cursor: pointer; white-space: nowrap;">⬇ ${翻译值.fetchIP}</button>
                                 </div>
                             </div>
@@ -5474,17 +5474,17 @@ async function 处理订阅值(请求241, 用户240 = null) {
                                     </div>
                                     <div id="cityCheckboxesContainer" style="display: flex; flex-wrap: wrap; gap: 8px; max-height: 80px; overflow-y: auto; padding: 5px;"></div>
                                 </div>
-                                <div id="latencyResultsList" style="background: rgba(0, 0, 0, 0.5); border: 1px solid #004400; border-radius: 4px; padding: 10px;"></div>
+                                <div id="latencyResultsList" style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 4px; padding: 10px;"></div>
                                 <div style="margin-top: 10px; display: flex; gap: 10px;">
-                                    <button type="button" id="overwriteSelectedToYx" style="flex: 1; background: rgba(0, 220, 130, 0.3); border: 1px solid #2563eb; padding: 10px 20px; color: #2563eb; font-family: 'Courier New', monospace; font-weight: bold; cursor: pointer; transition: all 0.3s;">${是否值236 ? '覆盖添加' : '覆盖添加'}</button>
-                                    <button type="button" id="appendSelectedToYx" style="flex: 1; background: rgba(0, 178, 110, 0.3); border: 1px solid #64748b; padding: 10px 20px; color: #64748b; font-family: 'Courier New', monospace; font-weight: bold; cursor: pointer; transition: all 0.3s;">${是否值236 ? '追加添加' : '追加添加'}</button>
+                                    <button type="button" id="overwriteSelectedToYx" style="flex: 1; background: rgba(16, 185, 129, 0.12); border: 1px solid #2563eb; padding: 10px 20px; color: #2563eb; font-family: 'Courier New', monospace; font-weight: bold; cursor: pointer; transition: all 0.3s;">${是否值236 ? '覆盖添加' : '覆盖添加'}</button>
+                                    <button type="button" id="appendSelectedToYx" style="flex: 1; background: rgba(16, 185, 129, 0.12); border: 1px solid #64748b; padding: 10px 20px; color: #64748b; font-family: 'Courier New', monospace; font-weight: bold; cursor: pointer; transition: all 0.3s;">${是否值236 ? '追加添加' : '追加添加'}</button>
                                 </div>
                             </div>
                         </div>
 
                         <div style="margin-bottom: 15px;">
                                 <label style="display: block; margin-bottom: 8px; color: #2563eb; font-weight: bold; text-shadow: 0 0 3px #2563eb;">${翻译值.socks5Config}</label>
-                                <input type="text" id="socksConfig" placeholder="${是否值236 ? 解码64('2YXYq9in2YQ6IHVzZXI6cGFzc0Bob3N0OnBvcnQg24zYpyBodHRwOi8vdXNlcjpwYXNzQGhvc3Q6cG9ydA==') : 解码64('5L6L5aaCOiB1c2VyOnBhc3NAaG9zdDpwb3J0IOaIliBodHRwOi8vdXNlcjpwYXNzQGhvc3Q6cG9ydA==')}" style="width: 100%; padding: 12px; background: rgba(0, 0, 0, 0.8); border: 2px solid #2563eb; color: #2563eb; font-family: 'Courier New', monospace; font-size: 14px;">
+                                <input type="text" id="socksConfig" placeholder="${是否值236 ? 解码64('2YXYq9in2YQ6IHVzZXI6cGFzc0Bob3N0OnBvcnQg24zYpyBodHRwOi8vdXNlcjpwYXNzQGhvc3Q6cG9ydA==') : 解码64('5L6L5aaCOiB1c2VyOnBhc3NAaG9zdDpwb3J0IOaIliBodHRwOi8vdXNlcjpwYXNzQGhvc3Q6cG9ydA==')}" style="width: 100%; padding: 12px; background: #f1f5f9; border: 2px solid #cbd5e1; color: #0f172a; font-family: 'Courier New', monospace; font-size: 14px;">
                                 <small style="color: #64748b; font-size: 0.85rem;">${是否值236 ? 解码64('2KLYr9ix2LMg2b7YsdmI2qnYs9uMINiu2LHZiNis24wg2KjYsdin24wg2KfZhtiq2YLYp9mEINiq2YXYp9mFINiq2LHYp9mB24zaqSDYrtix2YjYrNuMLiDYqNiv2YjZhiDZvtuM2LTZiNmG2K8g2KjZhyDYtdmI2LHYqiBzNSDYr9ixINmG2LjYsSDar9ix2YHYqtmHINmF24zigIzYtNmI2K8=') : 解码64('5Ye656uZ5Luj55CG5Zyw5Z2A77yM55So5LqO6L2s5Y+R5omA5pyJ5Ye656uZ5rWB6YeP44CC5LiN5YaZ5YmN57yA6buY6K6k5oyJIHM1IOWkhOeQhg==')}</small>
                         </div>
                     </form>
@@ -5493,7 +5493,7 @@ async function 处理订阅值(请求241, 用户240 = null) {
                     <form id="advancedConfigForm" style="margin-bottom: 20px;">
                         <div style="margin-bottom: 15px;">
                                 <label style="display: block; margin-bottom: 8px; color: #2563eb; font-weight: bold; text-shadow: 0 0 3px #2563eb;">${翻译值.subscriptionConverter}</label>
-                                <input type="text" id="scu" placeholder="${翻译值.subscriptionConverterPlaceholder}" style="width: 100%; padding: 12px; background: rgba(0, 0, 0, 0.8); border: 2px solid #2563eb; color: #2563eb; font-family: 'Courier New', monospace; font-size: 14px;">
+                                <input type="text" id="scu" placeholder="${翻译值.subscriptionConverterPlaceholder}" style="width: 100%; padding: 12px; background: #f1f5f9; border: 2px solid #cbd5e1; color: #0f172a; font-family: 'Courier New', monospace; font-size: 14px;">
                                 <small style="color: #64748b; font-size: 0.85rem;">${翻译值.subscriptionConverterHint}</small>
                         </div>
                         <div style="margin-bottom: 15px;">
@@ -5564,7 +5564,7 @@ async function 处理订阅值(请求241, 用户240 = null) {
                         </div>
                         <div style="margin-bottom: 15px;">
                                 <label style="display: block; margin-bottom: 8px; color: #2563eb; font-weight: bold; text-shadow: 0 0 3px #2563eb;">${翻译值.allowAPIManagement}</label>
-                            <select id="apiEnabled" style="width: 100%; padding: 12px; background: rgba(0, 0, 0, 0.8); border: 2px solid #2563eb; color: #2563eb; font-family: 'Courier New', monospace; font-size: 14px;">
+                            <select id="apiEnabled" style="width: 100%; padding: 12px; background: #f1f5f9; border: 2px solid #cbd5e1; color: #0f172a; font-family: 'Courier New', monospace; font-size: 14px;">
                                     <option value="">${翻译值.apiEnabledDefault}</option>
                                     <option value="yes">${翻译值.apiEnabledYes}</option>
                             </select>
@@ -5572,7 +5572,7 @@ async function 处理订阅值(请求241, 用户240 = null) {
                         </div>
                         <div style="margin-bottom: 15px;">
                                 <label style="display: block; margin-bottom: 8px; color: #2563eb; font-weight: bold; text-shadow: 0 0 3px #2563eb;">${翻译值.regionMatching}</label>
-                            <select id="regionMatching" style="width: 100%; padding: 12px; background: rgba(0, 0, 0, 0.8); border: 2px solid #2563eb; color: #2563eb; font-family: 'Courier New', monospace; font-size: 14px;">
+                            <select id="regionMatching" style="width: 100%; padding: 12px; background: #f1f5f9; border: 2px solid #cbd5e1; color: #0f172a; font-family: 'Courier New', monospace; font-size: 14px;">
                                     <option value="">${翻译值.regionMatchingDefault}</option>
                                     <option value="no">${翻译值.regionMatchingNo}</option>
                             </select>
@@ -5580,7 +5580,7 @@ async function 处理订阅值(请求241, 用户240 = null) {
                         </div>
                         <div style="margin-bottom: 15px;">
                                 <label style="display: block; margin-bottom: 8px; color: #2563eb; font-weight: bold; text-shadow: 0 0 3px #2563eb;">${翻译值.downgradeControl}</label>
-                            <select id="downgradeControl" style="width: 100%; padding: 12px; background: rgba(0, 0, 0, 0.8); border: 2px solid #2563eb; color: #2563eb; font-family: 'Courier New', monospace; font-size: 14px;">
+                            <select id="downgradeControl" style="width: 100%; padding: 12px; background: #f1f5f9; border: 2px solid #cbd5e1; color: #0f172a; font-family: 'Courier New', monospace; font-size: 14px;">
                                     <option value="">${翻译值.downgradeControlDefault}</option>
                                     <option value="no">${翻译值.downgradeControlNo}</option>
                                     <option value="only">${翻译值.downgradeControlOnly}</option>
@@ -5589,7 +5589,7 @@ async function 处理订阅值(请求241, 用户240 = null) {
                         </div>
                         <div style="margin-bottom: 15px;">
                                 <label style="display: block; margin-bottom: 8px; color: #2563eb; font-weight: bold; text-shadow: 0 0 3px #2563eb;">${翻译值.tlsControl}</label>
-                            <select id="portControl" style="width: 100%; padding: 12px; background: rgba(0, 0, 0, 0.8); border: 2px solid #2563eb; color: #2563eb; font-family: 'Courier New', monospace; font-size: 14px;">
+                            <select id="portControl" style="width: 100%; padding: 12px; background: #f1f5f9; border: 2px solid #cbd5e1; color: #0f172a; font-family: 'Courier New', monospace; font-size: 14px;">
                                     <option value="">${翻译值.tlsControlDefault}</option>
                                     <option value="yes">${翻译值.tlsControlYes}</option>
                             </select>
@@ -5597,14 +5597,14 @@ async function 处理订阅值(请求241, 用户240 = null) {
                         </div>
                         <div style="margin-bottom: 15px;">
                                 <label style="display: block; margin-bottom: 8px; color: #2563eb; font-weight: bold; text-shadow: 0 0 3px #2563eb;">${翻译值.preferredControl}</label>
-                            <select id="preferredControl" style="width: 100%; padding: 12px; background: rgba(0, 0, 0, 0.8); border: 2px solid #2563eb; color: #2563eb; font-family: 'Courier New', monospace; font-size: 14px;">
+                            <select id="preferredControl" style="width: 100%; padding: 12px; background: #f1f5f9; border: 2px solid #cbd5e1; color: #0f172a; font-family: 'Courier New', monospace; font-size: 14px;">
                                     <option value="">${翻译值.preferredControlDefault}</option>
                                     <option value="yes">${翻译值.preferredControlYes}</option>
                             </select>
                                 <small style="color: #64748b; font-size: 0.85rem;">${翻译值.preferredControlHint}</small>
                         </div>
                     </form>
-                    <div id="currentConfig" style="background: rgba(0, 0, 0, 0.9); border: 1px solid #2563eb; padding: 15px; margin: 10px 0; font-family: 'Courier New', monospace; color: #2563eb;">
+                    <div id="currentConfig" style="background: #ffffff; border: 1px solid #2563eb; padding: 15px; margin: 10px 0; font-family: 'Courier New', monospace; color: #2563eb;">
                             ${翻译值.loading}
                     </div>
                     <div id="pathTypeInfo" style="background: rgba(15, 3, 40, 0.7); border: 1px solid #2563eb; padding: 15px; margin: 10px 0; font-family: 'Courier New', monospace; color: #2563eb;">
@@ -6538,7 +6538,7 @@ function 更新工作器地区状态() {
     if (是否有自定义地址) {
       值地区.style.opacity = '0.5';
       值地区.style.cursor = 'not-allowed';
-      值地区.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
+      值地区.style.backgroundColor = 'rgba(30, 41, 59, 0.04)';
       // 显示提示信息
       if (值地区值) {
         值地区值.style.display = 'block';
@@ -6547,7 +6547,7 @@ function 更新工作器地区状态() {
     } else {
       值地区.style.opacity = '1';
       值地区.style.cursor = 'pointer';
-      值地区.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+      值地区.style.backgroundColor = 'rgba(30, 41, 59, 0.04)';
       // 隐藏提示信息
       if (值地区值) {
         值地区值.style.display = 'none';
